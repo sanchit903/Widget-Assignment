@@ -1,0 +1,36 @@
+/* Neumorphic-like shadow for buttons */
+.btn_neumorphic_shadow {
+    background-color: #374151;
+    /* A base dark gray for the button itself */
+    box-shadow:
+        inset 3px 3px 6px #282d35,
+        /* Darker shadow for the "pressed" effect (bottom-right) */
+        inset -3px -3px 6px #46556e,
+        /* Lighter shadow for the "pressed" effect (top-left) */
+        6px 6px 12px #282d35,
+        /* Outer dark shadow for depth (bottom-right) */
+        -6px -6px 12px #46556e;
+    /* Outer light shadow for depth (top-left) */
+}
+
+/* Hover effect for neumorphic buttons */
+.btn_neumorphic_shadow:hover {
+    box-shadow:
+        inset 2px 2px 4px #282d35,
+        /* Slightly less pronounced inset on hover */
+        inset -2px -2px 4px #46556e,
+        4px 4px 8px #282d35,
+        /* Slightly less pronounced outer shadow on hover */
+        -4px -4px 8px #46556e;
+}
+
+/* Disabled state for neumorphic buttons - to flatten or de-emphasize */
+.btn_neumorphic_shadow:disabled {
+    background-color: #2e3541;
+    /* Slightly darker background for disabled */
+    box-shadow: inset 1px 1px 2px #20242b, inset -1px -1px 2px #3c4450;
+    /* A flatter inset shadow */
+    cursor: not-allowed;
+    opacity: 0.7;
+    /* Optional: make it slightly transparent */
+}
