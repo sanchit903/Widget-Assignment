@@ -7,7 +7,7 @@ const Profile = ({ data }) => {
     const [activeTab, setActiveTab] = useState('aboutMe');
 
     const tabClasses = (tab) =>
-        `px-8 py-2 w-1/3 font-medium text-sm transition-colors duration-200 rounded-lg  ${activeTab === tab
+        `px-2 py-2 w-1/3 font-medium text-sm sm:text-sm transition-colors duration-200 rounded-lg  ${activeTab === tab
             ? `bg-[#28292f] text-white shadow-lg cursor-auto ${styles.shadow_tab_active}`
             : `text-gray-400 hover:text-gray-200 hover:bg-[#37393d] cursor-pointer`
         }`;
